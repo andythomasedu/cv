@@ -1,0 +1,97 @@
+<!-- by typing "html" and pressing enter, we can automatically add boiler plate
+code (se below)-->
+<!DOCTYPE html> <!-- first line where we declare doc type (tells browser with version of html were using)-->
+<!-- this line is html tag, tells browswer everthing between these lines is html code-->
+<html lang="en" dir="ltr">
+<!-- HEAD: the part of the html file that holds info about the webpage and it
+tells the browser how it should handle the page. for example, we might
+have a title tag which tells the browser what is the title of this document
+or page. -->
+<head>
+  <!-- meta tags tell browser how it should render (or display) the webpage.
+    character set utf-8..this is standard encoding used w/ html 5..everything that is unicode can be
+    encoded correctly using utf-8. This gives you best shot of website being rendered correctly from
+    international vistors-->
+  <meta charset="utf-8">
+  <title>Andy's Personal Site</title>
+</head>
+<body>
+  <table cellspacing="10">
+    <tr>
+      <td>
+        <img src="images/humboldt-penguin-2-modified.png"
+          alt="Andy's profile image">
+      </td>
+      <td>
+        <h1>Andy Thomas</h1>
+        <p><em>Data Analyst</em></p>
+        <p>Software developer with 1.5 years of experience in both front and back
+        end development. Languages include C, Python, HTML and SQL. Primary area of
+        study at universtiy was finance with professional experience at Morgan Stanley,
+        Hines Securites, Inc. (commercial real estate developement) and Amica Insurance.</p>
+      </td>
+    </tr>
+  </table>
+  <!-- "alt" attribute below will display text if image is not able to populate to let user know what image was about.
+    Also, Google looks at "alt" for search optimization which will show up in search results-->
+  <!-- You can also paste image file path in quotes below for "src="-->
+  <hr>
+  <h3>Education</h3>
+  <ul>
+    <li>Texas Tech Universtiy</li>
+    <li>Stephen F. Austin</li>
+    <li>Newman Smith High School</li>
+  </ul>
+  <hr>
+  <h3>Work Experience</h3>
+  <!-- now below we will create a <table>, with each row as <tr> and each cell in the row as <td>-->
+  <!-- aside from cells, tables also have header, body and footer..mirroring what we have in html websites-->
+  <table cellspacing="10">
+    <thead>
+      <!-- why do we put tr, th below in thead vs down with the rest of the content? becuase later we may want to
+      style it different from the normal table elements or make it function in a different way. for example, later
+      we can isolate the header and fix it in place so when you scroll, only the data below moves. -->
+      <tr>
+        <th>Dates</th>
+        <th>Job/Company</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>2015-2020</td>
+        <td>Sales and Client Services Team Lead at Amica Insurnace</td>
+      </tr>
+      <tr>
+        <td>2012</td>
+        <td>Regional Sales Consultant at Hines Securities, Inc.</td>
+      </tr>
+      <tr>
+        <td>2010-2012</td>
+        <td>MBS Mitigation Speacilist at Nationstar</td>
+      </tr>
+    </tbody>
+    <tfoot>
+    </tfoot>
+  </table>
+  <hr>
+  <h3>Skills</h3>
+  <table cellspacing="10">
+    <tr>
+      <td>Python</td>
+      <td>⭐️⭐️⭐️⭐️⭐️</td>
+    </tr>
+    <tr>
+      <td>C</td>
+      <td>⭐️⭐️⭐️⭐️</td>
+    </tr>
+    <tr>
+      <td>Barista</td>
+      <td>⭐️⭐️⭐️⭐️</td>
+    </tr>
+  </table>
+  <hr>
+  <h3><a href="hobbies.html">My Hobbies</a></h3>
+  <h3><a href="contactInfo/my-contact-info.html">Contact Info</a></h3>
+</body>
+
+</html>
